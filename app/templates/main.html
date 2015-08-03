@@ -1,0 +1,20 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="/assets/logo.png" height="22" />
+    </a>
+
+    <ul class="nav navbar-nav">
+      <li><a ui-sref="dashboard">Dashboard</a></li>
+    </ul>
+    <ul class="nav navbar-nav">
+      <li><a ui-sref="main.another">Another Page</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#" ng-click="main.logout()">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div id="main-container" class="container" ui-view>
+</div>
