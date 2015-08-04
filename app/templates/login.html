@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-sm-4 col-sm-offset-4">
+      <h1 style="text-align: center;">Login</h1>
+      <div class="well">
+        <form ng-submit="vm.submit(params)" ng-init="params = vm.testUser">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input id="email" type="email" ng-model="params.email"
+              class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" ng-model="params.password"
+              class="form-control" />
+          </div>
+          <button type="submit" class="btn btn-default">
+            <span class="glyphicon glyphicon-lock"></span>
+            Login
+          </button>
+          <a ui-sref="signup" class="btn btn-default pull-right">
+            Sign Up
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
